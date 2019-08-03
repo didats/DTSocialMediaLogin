@@ -8,7 +8,7 @@
 Handle iOS app login with Twitter, Facebook and Google with ease. It will really saves you a lot of hours.
 
 ## Screenshot
-<p align="center"><img src ="https://github.com/didats/DTStringPicker/raw/master/screenshot.png" _><_p>
+
 
 ##  Requirements
 * Base SDK: iOS 12
