@@ -47,6 +47,8 @@ The sample project is there to let you see it, but I will keep the codes here fo
 
 Open your **AppDelegate.swift**
 ```swift
+// Add import at the header
+import DTSocialMediaLogin
 
 // Add to your openURL method
 func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
