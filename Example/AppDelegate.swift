@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DTSocialMediaLogin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

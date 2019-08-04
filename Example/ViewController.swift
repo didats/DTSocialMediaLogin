@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DTSocialMediaLogin
 
 class ViewController: UIViewController {
     

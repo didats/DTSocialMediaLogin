@@ -19,7 +19,6 @@
 		1B4501D522F683690087D78F /* DTSocialMediaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501C722F683690087D78F /* DTSocialMediaLogin.swift */; };
 		1B4501D622F683690087D78F /* DTFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501C922F683690087D78F /* DTFacebook.swift */; };
 		1B4501D722F683690087D78F /* DTFacebookUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501CA22F683690087D78F /* DTFacebookUser.swift */; };
-		1B4501D822F683690087D78F /* DTCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501CB22F683690087D78F /* DTCache.swift */; };
 		1B4501D922F683690087D78F /* DTSocialMediaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501CC22F683690087D78F /* DTSocialMediaUser.swift */; };
 		1B4501DA22F683690087D78F /* DTTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501CE22F683690087D78F /* DTTwitter.swift */; };
 		1B4501DB22F683690087D78F /* DTTwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501CF22F683690087D78F /* DTTwitterUser.swift */; };
@@ -57,7 +56,6 @@
 		1B4501C722F683690087D78F /* DTSocialMediaLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTSocialMediaLogin.swift; sourceTree = "<group>"; };
 		1B4501C922F683690087D78F /* DTFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFacebook.swift; sourceTree = "<group>"; };
 		1B4501CA22F683690087D78F /* DTFacebookUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFacebookUser.swift; sourceTree = "<group>"; };
-		1B4501CB22F683690087D78F /* DTCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTCache.swift; sourceTree = "<group>"; };
 		1B4501CC22F683690087D78F /* DTSocialMediaUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTSocialMediaUser.swift; sourceTree = "<group>"; };
 		1B4501CE22F683690087D78F /* DTTwitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitter.swift; sourceTree = "<group>"; };
 		1B4501CF22F683690087D78F /* DTTwitterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitterUser.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				1B4501C822F683690087D78F /* Facebook */,
 				1B4501C322F683680087D78F /* Google */,
 				1B4501CD22F683690087D78F /* Twitter */,
-				1B4501CB22F683690087D78F /* DTCache.swift */,
 				1B4501D122F683690087D78F /* DTError.swift */,
 				1B4501C622F683680087D78F /* DTSocialMediaKeys.swift */,
 				1B4501C722F683690087D78F /* DTSocialMediaLogin.swift */,
@@ -343,7 +340,6 @@
 				1B4501D922F683690087D78F /* DTSocialMediaUser.swift in Sources */,
 				1B4501D622F683690087D78F /* DTFacebook.swift in Sources */,
 				1B4501D522F683690087D78F /* DTSocialMediaLogin.swift in Sources */,
-				1B4501D822F683690087D78F /* DTCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

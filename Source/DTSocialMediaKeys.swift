@@ -21,26 +21,10 @@ public struct DTSocialMediaKeys {
     var twitterAppKey: String
     var twitterAppSecret: String
     
-    public func save() {
-        if googleClientID.count > 0 {
-            DTCache.shared.save(googleClientID, key: SocialMediaKeys.GoogleID.rawValue)
-        }
-        if facebookID.count > 0 {
-            DTCache.shared.save(facebookID, key: SocialMediaKeys.FacebookID.rawValue)
-        }
-        if twitterAppKey.count > 0 {
-            DTCache.shared.save(twitterAppKey, key: SocialMediaKeys.TwitterKey.rawValue)
-        }
-        if twitterAppSecret.count > 0 {
-            DTCache.shared.save(twitterAppSecret, key: SocialMediaKeys.TwitterSecret.rawValue)
-        }
-    }
-    
-    static func currentValue(_ type: SocialMediaKeys) -> String {
-        if let item = DTCache.shared.hasObject(withKey: type.rawValue) as? String {
-            return item
-        }
-        
-        return ""
+    public init(googleClientID: String, facebookID: String, twitterAppKey: String, twitterAppSecret: String) {
+        self.googleClientID = googleClientID
+        self.facebookID = facebookID
+        self.twitterAppKey = twitterAppKey
+        self.twitterAppSecret = twitterAppSecret
     }
 }
