@@ -1,9 +1,8 @@
-_Currently on high development, will push the codes once everything is ready_
-
 # DTSocialMediaLogin
-[Version](http://cocoapods.org/pods/DTSocialMediaLogin)
-[License](http://cocoapods.org/pods/DTSocialMediaLogin)
-[Platform](http://cocoapods.org/pods/DTSocialMediaLogin)
+![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)
+[![Version](https://img.shields.io/cocoapods/v/DTSocialMediaLogin.svg?style=flat)](http://cocoapods.org/pods/DTSocialMediaLogin)
+[![License](https://img.shields.io/cocoapods/l/DTSocialMediaLogin.svg?style=flat)](http://cocoapods.org/pods/DTSocialMediaLogin)
+[![Platform](https://img.shields.io/cocoapods/p/DTSocialMediaLogin?style=flat)](http://cocoapods.org/pods/DTSocialMediaLogin)
 
 Handle iOS app login with Twitter, Facebook and Google with ease. It will really saves you a lot of hours.  The callback will give you these variables: **id**, **name**, **email**, **profile image url**.
 
@@ -31,7 +30,7 @@ Go to Google APIs Console. Create a project, go to APIs & Services, Credentials,
 Go to Facebook Developer Portal, and create an app with iOS Platform. Make sure everything okay so you could activate the app to public. You gonna need to get Application ID here.
 
 3. **Twitter**  
-Register to their Developer Portal, and create new app. Do not forget to tick the _Using Twitter Login_ option, and put the callback with “**dttwitter-{your_app_key}**” (remove the curly bracket _{}_ for sure). You gonna need
+Register to their Developer Portal, and create new app. Do not forget to tick the _Using Twitter Login_ option, and put the callback with “**dttwitter-{your_app_key}**” (remove the curly bracket _{}_ for sure).
 
 ## URL Schemes
 Once you have done with the setup above, you gonna need to fill in the URL Schemes for each social media platform. Go to your target app, click on Info tab, and scroll to the URL Types section.
