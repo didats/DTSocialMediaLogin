@@ -18,8 +18,8 @@ Add following in your Podfile
 pod ‘DTSocialMediaLogin’
 ```
 
-## Manual Installation
-You just need to drag the Source directory to your working project on Xcode. 
+## Dependencies
+This library is using [FBSDKCoreKit](https://cocoapods.org/pods/FBSDKCoreKit), [FBSDKLoginKit](https://cocoapods.org/pods/FBSDKLoginKit), [GoogleSignIn](https://cocoapods.org/pods/GoogleSignIn), and [OAuthSwift](https://cocoapods.org/pods/OAuthSwift).
 
 ## Setting up
 Before implementing any codes, you will need to have these 4 items which you could get from the development  portal of each Social Media. Assuming you knew the portal, so I am not gonna go through in detail.
