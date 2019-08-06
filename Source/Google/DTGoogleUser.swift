@@ -25,13 +25,4 @@ public struct DTGoogleUser {
         self.imageURL = user.profile.imageURL(withDimension: 100)
         self.user = user
     }
-    
-    func convert() -> [String: Any] {
-        return [
-            "fullname": self.fullname,
-            "email": self.email,
-            "social_id": self.userID,
-            "social_type": "GOOGLE"
-        ]
-    }
 }

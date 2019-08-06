@@ -57,13 +57,14 @@ final class DTTwitter {
                     
                 switch result {
                 case .success(let (credential, _, _)):
+                    
                     self.oauth?.client.get(DTTwitterURL.OAuth1.Account, completionHandler: { (resultClient) in
                         switch (resultClient) {
                         case .success(let  resp):
                             if let jsonData = (resp.dataString(encoding: .utf8) ?? "").data(using: .utf8) {
                                 do {
                                     let decoder = JSONDecoder()
-                                    let profile = try decoder.decode(DTTwitterUser.self, from: jsonData)
+                                    var profile = try decoder.decode(DTTwitterUser.self, from: jsonData)
                                     profile.oauthToken = credential.oauthToken
                                     done(nil, profile)
                                 } catch {

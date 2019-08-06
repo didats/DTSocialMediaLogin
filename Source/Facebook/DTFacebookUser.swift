@@ -18,13 +18,4 @@ public struct DTFacebookUser {
         self.fullname = fb["name"] as? String ?? ""
         self.email = fb["email"] as? String ?? ""
     }
-    
-    func convert() -> [String: Any]  {
-        return [
-            "fullname": self.fullname,
-            "email": self.email,
-            "social_id": self.id,
-            "social_type": "FACEBOOK"
-        ]
-    }
 }

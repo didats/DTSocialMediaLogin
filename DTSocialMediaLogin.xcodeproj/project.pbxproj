@@ -19,6 +19,7 @@
 		1B4501DB22F683690087D78F /* DTTwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501CF22F683690087D78F /* DTTwitterUser.swift */; };
 		1B4501DC22F683690087D78F /* DTTwitterURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501D022F683690087D78F /* DTTwitterURL.swift */; };
 		1B4501DD22F683690087D78F /* DTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501D122F683690087D78F /* DTError.swift */; };
+		E059156CB8885F3038FDB64E /* Pods_DTSocialMediaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB50BA4031033A8E95C1B292 /* Pods_DTSocialMediaLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		1B4501CF22F683690087D78F /* DTTwitterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitterUser.swift; sourceTree = "<group>"; };
 		1B4501D022F683690087D78F /* DTTwitterURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitterURL.swift; sourceTree = "<group>"; };
 		1B4501D122F683690087D78F /* DTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTError.swift; sourceTree = "<group>"; };
+		1CECCD0733C38528A93B5867 /* Pods-DTSocialMediaLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTSocialMediaLogin.release.xcconfig"; path = "Target Support Files/Pods-DTSocialMediaLogin/Pods-DTSocialMediaLogin.release.xcconfig"; sourceTree = "<group>"; };
+		CB50BA4031033A8E95C1B292 /* Pods_DTSocialMediaLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTSocialMediaLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B202E9E6D0E32B2B77B1BF /* Pods-DTSocialMediaLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTSocialMediaLogin.debug.xcconfig"; path = "Target Support Files/Pods-DTSocialMediaLogin/Pods-DTSocialMediaLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E059156CB8885F3038FDB64E /* Pods_DTSocialMediaLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				1B45017D22F2F6020087D78F /* Source */,
 				1B45017C22F2F6020087D78F /* Products */,
+				29467C7F147E0BBF951049E4 /* Pods */,
+				CE43CA6BADEB7BB43D84C71B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +116,24 @@
 			path = Twitter;
 			sourceTree = "<group>";
 		};
+		29467C7F147E0BBF951049E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7B202E9E6D0E32B2B77B1BF /* Pods-DTSocialMediaLogin.debug.xcconfig */,
+				1CECCD0733C38528A93B5867 /* Pods-DTSocialMediaLogin.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE43CA6BADEB7BB43D84C71B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB50BA4031033A8E95C1B292 /* Pods_DTSocialMediaLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -127,10 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B45018322F2F6020087D78F /* Build configuration list for PBXNativeTarget "DTSocialMediaLogin" */;
 			buildPhases = (
+				A84AB983DDB9FBAA831C4617 /* [CP] Check Pods Manifest.lock */,
 				1B45017622F2F6020087D78F /* Headers */,
 				1B45017722F2F6020087D78F /* Sources */,
 				1B45017822F2F6020087D78F /* Frameworks */,
 				1B45017922F2F6020087D78F /* Resources */,
+				8A8B88A400E59D3B43086369 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +211,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A8B88A400E59D3B43086369 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DTSocialMediaLogin/Pods-DTSocialMediaLogin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DTSocialMediaLogin/Pods-DTSocialMediaLogin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DTSocialMediaLogin/Pods-DTSocialMediaLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A84AB983DDB9FBAA831C4617 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DTSocialMediaLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B45017722F2F6020087D78F /* Sources */ = {
@@ -331,6 +400,7 @@
 		};
 		1B45018422F2F6020087D78F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B202E9E6D0E32B2B77B1BF /* Pods-DTSocialMediaLogin.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -340,7 +410,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DTSocialMediaLogin/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -358,6 +428,7 @@
 		};
 		1B45018522F2F6020087D78F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CECCD0733C38528A93B5867 /* Pods-DTSocialMediaLogin.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -367,7 +438,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DTSocialMediaLogin/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
