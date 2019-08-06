@@ -8,12 +8,13 @@
 
 import Foundation
 
-struct DTTwitterUser: Codable {
-    var email: String?
-    var id: String?
-    var name: String?
-    var profileImageURL: String?
-    var username: String?
+public struct DTTwitterUser: Codable {
+    public var email: String?
+    public var id: String?
+    public var name: String?
+    public var profileImageURL: String?
+    public var username: String?
+    public var oauthToken: String?
     
     private enum CodingKeys: String, CodingKey {
         case email
@@ -21,5 +22,6 @@ struct DTTwitterUser: Codable {
         case name
         case profileImageURL = "profile_image_url"
         case username = "screen_name"
+        case oauthToken = "oauth_token"
     }
 }

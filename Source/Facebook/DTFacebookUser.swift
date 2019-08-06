@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct DTFacebookUser {
-    var id: Int
-    var fullname: String
-    var email: String
+public struct DTFacebookUser {
+    public var id: Int
+    public var fullname: String
+    public var email: String
     
     init(fb: [String: Any]) {
         self.id = (fb["id"] as? NSNumber)?.intValue ?? 0

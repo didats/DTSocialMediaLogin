@@ -56,7 +56,7 @@ final class DTTwitter {
             let _ = self.oauth?.authorize(withCallbackURL: self.callback, completionHandler: { (result) in
                     
                 switch result {
-                case .success((_, _, _)):
+                case .success(let (credential, _, _)):
                     self.oauth?.client.get(DTTwitterURL.OAuth1.Account, completionHandler: { (resultClient) in
                         switch (resultClient) {
                         case .success(let  resp):
@@ -64,6 +64,7 @@ final class DTTwitter {
                                 do {
                                     let decoder = JSONDecoder()
                                     let profile = try decoder.decode(DTTwitterUser.self, from: jsonData)
+                                    profile.oauthToken = credential.oauthToken
                                     done(nil, profile)
                                 } catch {
                                     let err = DTError(title: "JSON format", description: error.localizedDescription, code: -1)

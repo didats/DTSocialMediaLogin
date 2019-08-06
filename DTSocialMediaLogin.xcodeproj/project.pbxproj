@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B45018022F2F6020087D78F /* DTSocialMediaLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B45017E22F2F6020087D78F /* DTSocialMediaLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B45018D22F2F6400087D78F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45018C22F2F6400087D78F /* AppDelegate.swift */; };
-		1B45018F22F2F6400087D78F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45018E22F2F6400087D78F /* ViewController.swift */; };
-		1B45019222F2F6400087D78F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B45019022F2F6400087D78F /* Main.storyboard */; };
-		1B45019422F2F6420087D78F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B45019322F2F6420087D78F /* Assets.xcassets */; };
-		1B45019722F2F6420087D78F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B45019522F2F6420087D78F /* LaunchScreen.storyboard */; };
 		1B4501D222F683690087D78F /* DTGoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501C422F683680087D78F /* DTGoogleUser.swift */; };
 		1B4501D322F683690087D78F /* DTGoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501C522F683680087D78F /* DTGoogleLogin.swift */; };
 		1B4501D422F683690087D78F /* DTSocialMediaKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501C622F683680087D78F /* DTSocialMediaKeys.swift */; };
@@ -24,32 +19,12 @@
 		1B4501DB22F683690087D78F /* DTTwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501CF22F683690087D78F /* DTTwitterUser.swift */; };
 		1B4501DC22F683690087D78F /* DTTwitterURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501D022F683690087D78F /* DTTwitterURL.swift */; };
 		1B4501DD22F683690087D78F /* DTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501D122F683690087D78F /* DTError.swift */; };
-		1B4501F022F684A80087D78F /* DTTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501E022F684A80087D78F /* DTTwitter.swift */; };
-		1B4501F122F684A80087D78F /* DTTwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501E122F684A80087D78F /* DTTwitterUser.swift */; };
-		1B4501F222F684A80087D78F /* DTTwitterURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501E222F684A80087D78F /* DTTwitterURL.swift */; };
-		1B4501F322F684A80087D78F /* DTSocialMediaKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501E322F684A80087D78F /* DTSocialMediaKeys.swift */; };
-		1B4501F422F684A80087D78F /* DTSocialMediaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501E422F684A80087D78F /* DTSocialMediaLogin.swift */; };
-		1B4501F522F684A80087D78F /* DTGoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501E622F684A80087D78F /* DTGoogleUser.swift */; };
-		1B4501F622F684A80087D78F /* DTGoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501E722F684A80087D78F /* DTGoogleLogin.swift */; };
-		1B4501F722F684A80087D78F /* DTSocialMediaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501E822F684A80087D78F /* DTSocialMediaUser.swift */; };
-		1B4501F822F684A80087D78F /* DTCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501E922F684A80087D78F /* DTCache.swift */; };
-		1B4501F922F684A80087D78F /* DTFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501EB22F684A80087D78F /* DTFacebook.swift */; };
-		1B4501FA22F684A80087D78F /* DTFacebookUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501EC22F684A80087D78F /* DTFacebookUser.swift */; };
-		1B4501FB22F684A80087D78F /* DTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501EE22F684A80087D78F /* DTError.swift */; };
-		1B4501FC22F684A80087D78F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B4501EF22F684A80087D78F /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B45017B22F2F6020087D78F /* DTSocialMediaLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTSocialMediaLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B45017E22F2F6020087D78F /* DTSocialMediaLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTSocialMediaLogin.h; sourceTree = "<group>"; };
 		1B45017F22F2F6020087D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B45018A22F2F6400087D78F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B45018C22F2F6400087D78F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B45018E22F2F6400087D78F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B45019122F2F6400087D78F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1B45019322F2F6420087D78F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1B45019622F2F6420087D78F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1B45019822F2F6420087D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4501C422F683680087D78F /* DTGoogleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTGoogleUser.swift; sourceTree = "<group>"; };
 		1B4501C522F683680087D78F /* DTGoogleLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTGoogleLogin.swift; sourceTree = "<group>"; };
 		1B4501C622F683680087D78F /* DTSocialMediaKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTSocialMediaKeys.swift; sourceTree = "<group>"; };
@@ -61,31 +36,10 @@
 		1B4501CF22F683690087D78F /* DTTwitterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitterUser.swift; sourceTree = "<group>"; };
 		1B4501D022F683690087D78F /* DTTwitterURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitterURL.swift; sourceTree = "<group>"; };
 		1B4501D122F683690087D78F /* DTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTError.swift; sourceTree = "<group>"; };
-		1B4501E022F684A80087D78F /* DTTwitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitter.swift; sourceTree = "<group>"; };
-		1B4501E122F684A80087D78F /* DTTwitterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitterUser.swift; sourceTree = "<group>"; };
-		1B4501E222F684A80087D78F /* DTTwitterURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitterURL.swift; sourceTree = "<group>"; };
-		1B4501E322F684A80087D78F /* DTSocialMediaKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTSocialMediaKeys.swift; sourceTree = "<group>"; };
-		1B4501E422F684A80087D78F /* DTSocialMediaLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTSocialMediaLogin.swift; sourceTree = "<group>"; };
-		1B4501E622F684A80087D78F /* DTGoogleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTGoogleUser.swift; sourceTree = "<group>"; };
-		1B4501E722F684A80087D78F /* DTGoogleLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTGoogleLogin.swift; sourceTree = "<group>"; };
-		1B4501E822F684A80087D78F /* DTSocialMediaUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTSocialMediaUser.swift; sourceTree = "<group>"; };
-		1B4501E922F684A80087D78F /* DTCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTCache.swift; sourceTree = "<group>"; };
-		1B4501EB22F684A80087D78F /* DTFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFacebook.swift; sourceTree = "<group>"; };
-		1B4501EC22F684A80087D78F /* DTFacebookUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTFacebookUser.swift; sourceTree = "<group>"; };
-		1B4501ED22F684A80087D78F /* DTSocialMediaLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSocialMediaLogin.h; sourceTree = "<group>"; };
-		1B4501EE22F684A80087D78F /* DTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTError.swift; sourceTree = "<group>"; };
-		1B4501EF22F684A80087D78F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1B45017822F2F6020087D78F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1B45018722F2F6400087D78F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				1B45017D22F2F6020087D78F /* Source */,
-				1B45018B22F2F6400087D78F /* Example */,
 				1B45017C22F2F6020087D78F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				1B45017B22F2F6020087D78F /* DTSocialMediaLogin.framework */,
-				1B45018A22F2F6400087D78F /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,20 +79,6 @@
 				1B45017F22F2F6020087D78F /* Info.plist */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		1B45018B22F2F6400087D78F /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				1B4501DE22F684A80087D78F /* Source */,
-				1B45018C22F2F6400087D78F /* AppDelegate.swift */,
-				1B45018E22F2F6400087D78F /* ViewController.swift */,
-				1B45019022F2F6400087D78F /* Main.storyboard */,
-				1B45019322F2F6420087D78F /* Assets.xcassets */,
-				1B45019522F2F6420087D78F /* LaunchScreen.storyboard */,
-				1B45019822F2F6420087D78F /* Info.plist */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 		1B4501C322F683680087D78F /* Google */ = {
@@ -169,51 +107,6 @@
 				1B4501D022F683690087D78F /* DTTwitterURL.swift */,
 			);
 			path = Twitter;
-			sourceTree = "<group>";
-		};
-		1B4501DE22F684A80087D78F /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				1B4501EA22F684A80087D78F /* Facebook */,
-				1B4501E522F684A80087D78F /* Google */,
-				1B4501DF22F684A80087D78F /* Twitter */,
-				1B4501E322F684A80087D78F /* DTSocialMediaKeys.swift */,
-				1B4501E422F684A80087D78F /* DTSocialMediaLogin.swift */,
-				1B4501E822F684A80087D78F /* DTSocialMediaUser.swift */,
-				1B4501E922F684A80087D78F /* DTCache.swift */,
-				1B4501ED22F684A80087D78F /* DTSocialMediaLogin.h */,
-				1B4501EE22F684A80087D78F /* DTError.swift */,
-				1B4501EF22F684A80087D78F /* Info.plist */,
-			);
-			path = Source;
-			sourceTree = SOURCE_ROOT;
-		};
-		1B4501DF22F684A80087D78F /* Twitter */ = {
-			isa = PBXGroup;
-			children = (
-				1B4501E022F684A80087D78F /* DTTwitter.swift */,
-				1B4501E122F684A80087D78F /* DTTwitterUser.swift */,
-				1B4501E222F684A80087D78F /* DTTwitterURL.swift */,
-			);
-			path = Twitter;
-			sourceTree = "<group>";
-		};
-		1B4501E522F684A80087D78F /* Google */ = {
-			isa = PBXGroup;
-			children = (
-				1B4501E622F684A80087D78F /* DTGoogleUser.swift */,
-				1B4501E722F684A80087D78F /* DTGoogleLogin.swift */,
-			);
-			path = Google;
-			sourceTree = "<group>";
-		};
-		1B4501EA22F684A80087D78F /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				1B4501EB22F684A80087D78F /* DTFacebook.swift */,
-				1B4501EC22F684A80087D78F /* DTFacebookUser.swift */,
-			);
-			path = Facebook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,23 +141,6 @@
 			productReference = 1B45017B22F2F6020087D78F /* DTSocialMediaLogin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1B45018922F2F6400087D78F /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1B45019922F2F6420087D78F /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				1B45018622F2F6400087D78F /* Sources */,
-				1B45018722F2F6400087D78F /* Frameworks */,
-				1B45018822F2F6400087D78F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Example;
-			productName = Example;
-			productReference = 1B45018A22F2F6400087D78F /* Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,9 +154,6 @@
 					1B45017A22F2F6020087D78F = {
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
-					};
-					1B45018922F2F6400087D78F = {
-						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
@@ -298,7 +171,6 @@
 			projectRoot = "";
 			targets = (
 				1B45017A22F2F6020087D78F /* DTSocialMediaLogin */,
-				1B45018922F2F6400087D78F /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -308,17 +180,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1B45018822F2F6400087D78F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B4501FC22F684A80087D78F /* Info.plist in Resources */,
-				1B45019722F2F6420087D78F /* LaunchScreen.storyboard in Resources */,
-				1B45019422F2F6420087D78F /* Assets.xcassets in Resources */,
-				1B45019222F2F6400087D78F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,47 +204,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1B45018622F2F6400087D78F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B4501F122F684A80087D78F /* DTTwitterUser.swift in Sources */,
-				1B4501F522F684A80087D78F /* DTGoogleUser.swift in Sources */,
-				1B4501FA22F684A80087D78F /* DTFacebookUser.swift in Sources */,
-				1B4501F722F684A80087D78F /* DTSocialMediaUser.swift in Sources */,
-				1B4501FB22F684A80087D78F /* DTError.swift in Sources */,
-				1B45018F22F2F6400087D78F /* ViewController.swift in Sources */,
-				1B4501F822F684A80087D78F /* DTCache.swift in Sources */,
-				1B4501F922F684A80087D78F /* DTFacebook.swift in Sources */,
-				1B4501F022F684A80087D78F /* DTTwitter.swift in Sources */,
-				1B45018D22F2F6400087D78F /* AppDelegate.swift in Sources */,
-				1B4501F222F684A80087D78F /* DTTwitterURL.swift in Sources */,
-				1B4501F622F684A80087D78F /* DTGoogleLogin.swift in Sources */,
-				1B4501F422F684A80087D78F /* DTSocialMediaLogin.swift in Sources */,
-				1B4501F322F684A80087D78F /* DTSocialMediaKeys.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1B45019022F2F6400087D78F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B45019122F2F6400087D78F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1B45019522F2F6420087D78F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B45019622F2F6420087D78F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1B45018122F2F6020087D78F /* Debug */ = {
@@ -561,42 +382,6 @@
 			};
 			name = Release;
 		};
-		1B45019A22F2F6420087D78F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RFDDVQQSR;
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rimbunesia.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1B45019B22F2F6420087D78F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RFDDVQQSR;
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rimbunesia.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -614,15 +399,6 @@
 			buildConfigurations = (
 				1B45018422F2F6020087D78F /* Debug */,
 				1B45018522F2F6020087D78F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1B45019922F2F6420087D78F /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1B45019A22F2F6420087D78F /* Debug */,
-				1B45019B22F2F6420087D78F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

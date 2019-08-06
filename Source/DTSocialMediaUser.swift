@@ -9,16 +9,18 @@
 import Foundation
 
 public struct DTSocialMediaUser {
-    var id: String
-    var name: String
-    var email: String
-    var profileImageURL: String
+    public var id: String
+    public var name: String
+    public var email: String
+    public var profileImageURL: String
+    public var origin: Any
     
     init(from: DTTwitterUser) {
         self.id = from.id ?? "0"
         self.name = from.name ?? ""
         self.email = from.email ?? ""
         self.profileImageURL = from.profileImageURL ?? ""
+        self.origin = from
     }
     
     init(from: DTGoogleUser) {
@@ -26,6 +28,7 @@ public struct DTSocialMediaUser {
         self.name = from.fullname
         self.email = from.email
         self.profileImageURL = (from.imageURL != nil) ? from.imageURL!.absoluteString : ""
+        self.origin = from
     }
     
     init(from: DTFacebookUser) {
@@ -33,5 +36,6 @@ public struct DTSocialMediaUser {
         self.name = from.fullname
         self.email = from.email
         self.profileImageURL = "https://graph.facebook.com/\(self.id)/picture?type=normal"
+        self.origin = from
     }
 }

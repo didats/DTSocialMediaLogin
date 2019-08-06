@@ -9,12 +9,13 @@
 import Foundation
 import GoogleSignIn
 
-struct DTGoogleUser {
-    var userID: String
-    var fullname: String
-    var email: String
-    var token: String
-    var imageURL: URL?
+public struct DTGoogleUser {
+    public var userID: String
+    public var fullname: String
+    public var email: String
+    public var token: String
+    public var imageURL: URL?
+    public var user:  GIDGoogleUser
     
     init(user: GIDGoogleUser) {
         self.userID = user.userID ?? "0"
@@ -22,6 +23,7 @@ struct DTGoogleUser {
         self.fullname = user.profile.name ?? ""
         self.email = user.profile.email ?? ""
         self.imageURL = user.profile.imageURL(withDimension: 100)
+        self.user = user
     }
     
     func convert() -> [String: Any] {
