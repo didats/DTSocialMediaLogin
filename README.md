@@ -1,8 +1,8 @@
 # DTSocialMediaLogin
 ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)
-[Version](http://cocoapods.org/pods/DTSocialMediaLogin)
-[License](http://cocoapods.org/pods/DTSocialMediaLogin)
-[Platform](http://cocoapods.org/pods/DTSocialMediaLogin)
+[![Version](https://img.shields.io/cocoapods/v/DTSocialMediaLogin.svg?style=flat)](http://cocoapods.org/pods/DTSocialMediaLogin)
+[![License](https://img.shields.io/cocoapods/l/DTSocialMediaLogin.svg?style=flat)](http://cocoapods.org/pods/DTSocialMediaLogin)
+[![Platform](https://img.shields.io/cocoapods/p/DTSocialMediaLogin?style=flat)](http://cocoapods.org/pods/DTSocialMediaLogin)
 
 Handle iOS app login with Twitter, Facebook and Google with ease. It will really saves you a lot of hours.  The callback will give you these variables:  
 * id (`String`)
@@ -30,13 +30,13 @@ This library is using [FBSDKCoreKit](https://cocoapods.org/pods/FBSDKCoreKit), [
 ## Setting up
 Before implementing any codes, you will need to have these 4 items which you could get from the development  portal of each Social Media. Assuming you knew the portal, so I am not gonna go through in detail.
 
-1. **Google**
+1. **Google**  
 Go to Google APIs Console. Create a project, go to APIs & Services, Credentials, and create one. You gonna need the `Client ID`
 
-2. **Facebook**
+2. **Facebook**  
 Go to Facebook Developer Portal, and create an app with iOS Platform. Make sure everything okay so you could activate the app to public. You gonna need to get `Application ID` here.
 
-3. **Twitter**
+3. **Twitter**  
 Register to their Developer Portal, and create new app. Do not forget to tick the `Using Twitter Login` option, and if you want to get the email address from user, you gonna need to go to Permission tab, and set the Additional permissions to `Request email address`.  
 
 ## URL Schemes
@@ -44,13 +44,13 @@ Once you have done with the setup above, you gonna need to fill in the `URL Sche
 
 Go to your app target, click on Info tab, and scroll to the `URL Types` section.
 
-1. **Facebook**
+1. **Facebook**  
 Add `fb{your_app_id}` (remove the curly braces please)  
 
-2. **Google**
-Follow the tutorial on [Google Sign-In for iOS](https://developers.google.com/identity/sign-in/ios/), skip on everything, just go to the section **3. Set the callback URL Type**. You will get the string on URL Schemes there.  Put them on the `URL Types` on  Xcode.
+2. **Google**  
+Follow the tutorial on [Google Sign-In for iOS](https://developers.google.com/identity/sign-in/ios/), skip on everything, just go to the section **3. Set the callback URL Type**. You will get the string on URL Schemes there.  Put them on the `URL Types` on Xcode. `URL Type` is your client ID with the order of the dot-delimited fields reversed. For example: `com.googleusercontent.apps.1234567890-abcdefg`
 
-3. **Twitter**
+3. **Twitter**  
 Add `dttwitter-{your_app_key}` (again, remove the curly braces)
 
 ## Usage
