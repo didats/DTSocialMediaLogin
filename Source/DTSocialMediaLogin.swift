@@ -23,6 +23,8 @@ public class DTSocialMediaLogin: NSObject {
     private var twitter: DTTwitter!
     private var google: DTGoogleLogin!
     
+    public var scopes: [String] = []
+    
     public static func setup(settings: DTSocialMediaKeys) -> DTSocialMediaLogin {
         let socialMedia = DTSocialMediaLogin()
         socialMedia.googleClientID = settings.googleClientID
@@ -32,7 +34,6 @@ public class DTSocialMediaLogin: NSObject {
         
         socialMedia.twitter = DTTwitter(key: settings.twitterAppKey, secret: settings.twitterAppSecret)
         socialMedia.google = DTGoogleLogin(clientID: settings.googleClientID)
-        
         return socialMedia
     }
     
@@ -63,6 +64,7 @@ public class DTSocialMediaLogin: NSObject {
             }
         }
         else if type == .Facebook {
+            facebook.scopes = scopes
             facebook.login(from: viewController) { (status, message, user) in
                 if let user = user {
                     callback(nil, DTSocialMediaUser(from: user))
@@ -74,6 +76,7 @@ public class DTSocialMediaLogin: NSObject {
             }
         }
         else if type == .Google {
+            google.scopes = scopes
             google.login()
             google.loggedIn = { status, message, user in
                 if let user = user {

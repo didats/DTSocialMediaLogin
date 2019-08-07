@@ -11,6 +11,7 @@ import GoogleSignIn
 
 class DTGoogleLogin: NSObject {
     var loggedIn: ((_ status: Bool, _ error: String, _ user: DTGoogleUser?) -> Void)?
+    var scopes: [String] = []
     
     init(clientID: String) {
         super.init()
@@ -20,6 +21,9 @@ class DTGoogleLogin: NSObject {
     }
     
     func login() {
+        if scopes.count > 0 {
+            GIDSignIn.sharedInstance()?.scopes = scopes
+        }
         GIDSignIn.sharedInstance().signIn()
     }
     

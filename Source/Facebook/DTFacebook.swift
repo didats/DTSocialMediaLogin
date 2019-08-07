@@ -12,6 +12,8 @@ import FBSDKLoginKit
 
 class DTFacebook: NSObject {
     static let shared = DTFacebook()
+    //private var scopes: [String] = ["email", "public_profile"]
+    public var scopes: [String] = []
     
     func setup(app: UIApplication, options: [UIApplication.LaunchOptionsKey: Any]?) {
         FBSDKCoreKit.ApplicationDelegate.shared.application(app, didFinishLaunchingWithOptions: options)
@@ -25,7 +27,12 @@ class DTFacebook: NSObject {
         
         let login = FBSDKLoginKit.LoginManager()
         login.defaultAudience = .everyone
-        login.logIn(permissions: ["email", "public_profile"], from: viewController) { (result, error) in
+        
+        if scopes.count == 0 {
+            scopes = ["email", "public_profile"]
+        }
+        
+        login.logIn(permissions: scopes, from: viewController) { (result, error) in
             DispatchQueue.main.async {
                 if error != nil {
                     done(false, error!.localizedDescription, nil)
