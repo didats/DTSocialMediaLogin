@@ -101,8 +101,9 @@ override func viewDidLoad() {
 ```
 
 ## Author
-**Didats Triadi**
-http://rimbunesia.com
+**Didats Triadi**  
+https://rimbunesia.com  
+http://didats.net
 
 ## How to say thank you
 As you probably guess, this library took  hours of my free time to work on. If you find this useful, please consider buying my Color Picker app,  [‎Kelir on the Mac App Store](https://apps.apple.com/us/app/kelir-pro/id1186597992?mt=12)
