@@ -28,7 +28,7 @@ pod ‘DTSocialMediaLogin’
 This library is using [FBSDKCoreKit](https://cocoapods.org/pods/FBSDKCoreKit), [FBSDKLoginKit](https://cocoapods.org/pods/FBSDKLoginKit), [GoogleSignIn](https://cocoapods.org/pods/GoogleSignIn), and [OAuthSwift](https://cocoapods.org/pods/OAuthSwift).
 
 ## Setting up
-Before implementing any codes, you will need to have these 4 items which you could get from the development  portal of each Social Media. Assuming you knew the portal, so I am not gonna go through in detail.
+Before implementing any codes, you will need to have these 4 items (2 items from Twitter) which you could get from the development  portal of each Social Media. Assuming you knew the portal, so I am not gonna go through in detail.
 
 1. **Google**  
 Go to Google APIs Console. Create a project, go to APIs & Services, Credentials, and create one. You gonna need the `Client ID`
@@ -37,7 +37,7 @@ Go to Google APIs Console. Create a project, go to APIs & Services, Credentials,
 Go to Facebook Developer Portal, and create an app with iOS Platform. Make sure everything okay so you could activate the app to public. You gonna need to get `Application ID` here.
 
 3. **Twitter**  
-Register to their Developer Portal, and create new app. Do not forget to tick the `Using Twitter Login` option, and if you want to get the email address from user, you gonna need to go to Permission tab, and set the Additional permissions to `Request email address`.  
+Register to their Developer Portal, and create new app. Do not forget to tick the `Using Twitter Login` option, and if you want to get the email address from user, you gonna need to go to Permission tab, and set the Additional permissions to `Request email address`. Go get the `API Key` and `Secret Key` from the tab `Keys and Tokens`.  
 
 ## URL Schemes
 Once you have done with the setup above, you gonna need to fill in the `URL Schemes` for each social media platform.  
