@@ -32,7 +32,7 @@ public struct DTSocialMediaUser {
     }
     
     init(from: DTFacebookUser) {
-        self.id = String(from.id)
+        self.id = from.id
         self.name = from.fullname
         self.email = from.email
         self.profileImageURL = "https://graph.facebook.com/\(self.id)/picture?type=normal"

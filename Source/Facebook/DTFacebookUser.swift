@@ -9,12 +9,12 @@
 import Foundation
 
 public struct DTFacebookUser {
-    public var id: Int
+    public var id: String
     public var fullname: String
     public var email: String
     
     init(fb: [String: Any]) {
-        self.id = (fb["id"] as? NSNumber)?.intValue ?? 0
+        self.id = fb["id"] as? String ?? "0"
         self.fullname = fb["name"] as? String ?? ""
         self.email = fb["email"] as? String ?? ""
     }
