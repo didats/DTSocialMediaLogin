@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		1B4501DB22F683690087D78F /* DTTwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501CF22F683690087D78F /* DTTwitterUser.swift */; };
 		1B4501DC22F683690087D78F /* DTTwitterURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501D022F683690087D78F /* DTTwitterURL.swift */; };
 		1B4501DD22F683690087D78F /* DTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4501D122F683690087D78F /* DTError.swift */; };
+		1BF6FCD223CDA713002AB6AB /* DTApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF6FCD123CDA713002AB6AB /* DTApple.swift */; };
 		E059156CB8885F3038FDB64E /* Pods_DTSocialMediaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB50BA4031033A8E95C1B292 /* Pods_DTSocialMediaLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		1B4501CF22F683690087D78F /* DTTwitterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitterUser.swift; sourceTree = "<group>"; };
 		1B4501D022F683690087D78F /* DTTwitterURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTTwitterURL.swift; sourceTree = "<group>"; };
 		1B4501D122F683690087D78F /* DTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTError.swift; sourceTree = "<group>"; };
+		1BF6FCD123CDA713002AB6AB /* DTApple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTApple.swift; sourceTree = "<group>"; };
 		1CECCD0733C38528A93B5867 /* Pods-DTSocialMediaLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTSocialMediaLogin.release.xcconfig"; path = "Target Support Files/Pods-DTSocialMediaLogin/Pods-DTSocialMediaLogin.release.xcconfig"; sourceTree = "<group>"; };
 		CB50BA4031033A8E95C1B292 /* Pods_DTSocialMediaLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTSocialMediaLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B202E9E6D0E32B2B77B1BF /* Pods-DTSocialMediaLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTSocialMediaLogin.debug.xcconfig"; path = "Target Support Files/Pods-DTSocialMediaLogin/Pods-DTSocialMediaLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		1B45017D22F2F6020087D78F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1BF6FCD023CDA6FF002AB6AB /* Apple */,
 				1B4501C822F683690087D78F /* Facebook */,
 				1B4501C322F683680087D78F /* Google */,
 				1B4501CD22F683690087D78F /* Twitter */,
@@ -116,13 +119,20 @@
 			path = Twitter;
 			sourceTree = "<group>";
 		};
+		1BF6FCD023CDA6FF002AB6AB /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				1BF6FCD123CDA713002AB6AB /* DTApple.swift */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
 		29467C7F147E0BBF951049E4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				D7B202E9E6D0E32B2B77B1BF /* Pods-DTSocialMediaLogin.debug.xcconfig */,
 				1CECCD0733C38528A93B5867 /* Pods-DTSocialMediaLogin.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -265,6 +275,7 @@
 				1B4501DA22F683690087D78F /* DTTwitter.swift in Sources */,
 				1B4501D322F683690087D78F /* DTGoogleLogin.swift in Sources */,
 				1B4501DC22F683690087D78F /* DTTwitterURL.swift in Sources */,
+				1BF6FCD223CDA713002AB6AB /* DTApple.swift in Sources */,
 				1B4501D222F683690087D78F /* DTGoogleUser.swift in Sources */,
 				1B4501D422F683690087D78F /* DTSocialMediaKeys.swift in Sources */,
 				1B4501D922F683690087D78F /* DTSocialMediaUser.swift in Sources */,
