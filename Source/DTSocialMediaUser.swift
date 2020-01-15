@@ -38,4 +38,13 @@ public struct DTSocialMediaUser {
         self.profileImageURL = "https://graph.facebook.com/\(self.id)/picture?type=normal"
         self.origin = from
     }
+    
+    @available(iOS 13, *)
+    init(from: DTAppleUser) {
+        self.id = from.id
+        self.name = from.fullname
+        self.email = from.email
+        self.profileImageURL = ""
+        self.origin = from
+    }
 }

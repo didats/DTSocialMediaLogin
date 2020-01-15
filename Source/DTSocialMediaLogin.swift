@@ -25,7 +25,15 @@ public class DTSocialMediaLogin: NSObject {
     private var facebook = DTFacebook()
     private var twitter: DTTwitter!
     private var google: DTGoogleLogin!
-    private var apple: DTApple!
+    
+    private var _apple: Any? = nil
+    @available(iOS 13.0, *)
+    fileprivate var apple: DTApple {
+        if _apple == nil {
+            _apple = DTApple()
+        }
+        return _apple as! DTApple
+    }
     
     public var scopes: [String] = []
     
@@ -93,11 +101,21 @@ public class DTSocialMediaLogin: NSObject {
             }
         case .Apple:
             if #available(iOS 13, *) {
-                apple = DTApple()
-                apple.handleAuthorizationAppleIDButtonPress()
-                apple.loggedIn = { error, user in
-                    callback(error, user)
+                _apple = DTApple(from: viewController)
+                (_apple as! DTApple).handleAuthorizationAppleIDButtonPress()
+                (_apple as! DTApple).loggedIn = { status, message, user in
+                    if let user = user {
+                        callback(nil, DTSocialMediaUser(from: user))
+                    }
+                    else {
+                        let error = DTError(title: "Apple Auth Error", description: message, code: -4)
+                        callback(error, nil)
+                    }
                 }
+            }
+            else {
+                let error = DTError(title: "iOS 13 requirement", description: "Sign in with Apple require iOS 13 and later", code: -3)
+                callback(error, nil)
             }
         }
     }
