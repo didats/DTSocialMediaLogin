@@ -1,6 +1,6 @@
 //
 //  DTSocialMediaLogin.swift
-//  Tester
+//  DTSocialMediaLogin
 //
 //  Created by Didats Triadi on 01/08/19.
 //  Copyright © 2019 Rimbunesia. All rights reserved.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-public enum DTSocialMediaProvider {
-    case Facebook, Twitter, Google
+public enum DTSocialMediaProvider: String {
+    case Facebook = "facebook"
+    case Twitter = "twitter"
+    case Google = "google"
+    case Apple = "apple"
 }
 
 public class DTSocialMediaLogin: NSObject {
@@ -22,6 +25,15 @@ public class DTSocialMediaLogin: NSObject {
     private var facebook = DTFacebook()
     private var twitter: DTTwitter!
     private var google: DTGoogleLogin!
+    
+    private var _apple: Any? = nil
+    @available(iOS 13.0, *)
+    fileprivate var apple: DTApple {
+        if _apple == nil {
+            _apple = DTApple()
+        }
+        return _apple as! DTApple
+    }
     
     public var scopes: [String] = []
     
@@ -53,7 +65,9 @@ public class DTSocialMediaLogin: NSObject {
     }
     
     public func login(with type: DTSocialMediaProvider, from viewController: UIViewController, callback: @escaping(_ error: DTError?, _ user: DTSocialMediaUser?) -> Void) {
-        if type == .Twitter {
+        
+        switch type {
+        case .Twitter:
             twitter.login { (error, user) in
                 if let user = user {
                     callback(nil, DTSocialMediaUser(from: user))
@@ -62,8 +76,7 @@ public class DTSocialMediaLogin: NSObject {
                     callback(error, nil)
                 }
             }
-        }
-        else if type == .Facebook {
+        case .Facebook:
             facebook.scopes = scopes
             facebook.login(from: viewController) { (status, message, user) in
                 if let user = user {
@@ -74,8 +87,7 @@ public class DTSocialMediaLogin: NSObject {
                     callback(error, nil)
                 }
             }
-        }
-        else if type == .Google {
+        case .Google:
             google.scopes = scopes
             google.login()
             google.loggedIn = { status, message, user in
@@ -86,6 +98,24 @@ public class DTSocialMediaLogin: NSObject {
                     let error = DTError(title: "Google Error", description: message, code: -3)
                     callback(error, nil)
                 }
+            }
+        case .Apple:
+            if #available(iOS 13, *) {
+                _apple = DTApple(from: viewController)
+                (_apple as! DTApple).handleAuthorizationAppleIDButtonPress()
+                (_apple as! DTApple).loggedIn = { status, message, user in
+                    if let user = user {
+                        callback(nil, DTSocialMediaUser(from: user))
+                    }
+                    else {
+                        let error = DTError(title: "Apple Auth Error", description: message, code: -4)
+                        callback(error, nil)
+                    }
+                }
+            }
+            else {
+                let error = DTError(title: "iOS 13 requirement", description: "Sign in with Apple require iOS 13 and later", code: -3)
+                callback(error, nil)
             }
         }
     }
