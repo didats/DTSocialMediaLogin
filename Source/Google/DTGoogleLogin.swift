@@ -17,7 +17,6 @@ class DTGoogleLogin: NSObject {
         super.init()
         GIDSignIn.sharedInstance()?.clientID = clientID
         GIDSignIn.sharedInstance()?.delegate = self
-        GIDSignIn.sharedInstance()?.uiDelegate = self
     }
     
     func login() {
@@ -28,7 +27,8 @@ class DTGoogleLogin: NSObject {
     }
     
     static func openURL(_ url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
-        return GIDSignIn.sharedInstance()?.handle(url, sourceApplication: (options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String), annotation: options[UIApplication.OpenURLOptionsKey.annotation]) ?? false
+        
+        return GIDSignIn.sharedInstance()?.handle(url) ?? false
     }
 }
 
@@ -47,19 +47,3 @@ extension DTGoogleLogin: GIDSignInDelegate {
         self.loggedIn?(false, error.localizedDescription, nil)
     }
 }
-
-extension DTGoogleLogin: GIDSignInUIDelegate {
-    func sign(inWillDispatch signIn: GIDSignIn!, error: Error!) {
-        
-    }
-    
-    func sign(_ signIn: GIDSignIn!, dismiss viewController: UIViewController!) {
-        viewController.dismiss(animated: true, completion: nil)
-    }
-    
-    func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
-        
-    }
-}
-
-
