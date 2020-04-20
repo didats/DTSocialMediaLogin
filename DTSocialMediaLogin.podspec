@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'FBSDKCoreKit', '~> 6.3.0'
   spec.dependency 'FBSDKLoginKit', '~> 6.3.0'
-  spec.dependency 'GoogleSignIn', '~> 5.1.0'
+  spec.dependency 'GoogleSignIn', '~> 5.0.2'
   spec.dependency 'OAuthSwift', '~> 2.1.0'
 
 end
