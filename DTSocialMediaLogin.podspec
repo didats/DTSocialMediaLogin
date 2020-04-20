@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.authors	    = { "Didats Triadi" => "didats@gmail.com" }
 
   spec.platform     = :ios
-  spec.platform     = :ios, "10.0"
+  spec.platform     = :ios, "10.0" 
 
   spec.source       = { :git => "https://github.com/didats/DTSocialMediaLogin.git", :tag => "#{spec.version}" }
   spec.swift_version = '5.0'
@@ -18,9 +18,9 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Source/**/*.swift"
   spec.static_framework = true
 
-  spec.dependency 'FBSDKCoreKit', '~> 5.8.0'
-  spec.dependency 'FBSDKLoginKit', '~> 5.8.0'
+  spec.dependency 'FBSDKCoreKit', '~> 6.4.0'
+  spec.dependency 'FBSDKLoginKit', '~> 6.4.0'
   spec.dependency 'GoogleSignIn', '~> 5.1.0'
-  spec.dependency 'OAuthSwift', '~> 2.0.0'
+  spec.dependency 'OAuthSwift', '~> 2.1.0'
 
 end
