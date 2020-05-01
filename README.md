@@ -3,33 +3,19 @@
 
 ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)[![Version](https://img.shields.io/cocoapods/v/DTSocialMediaLogin.svg?style=flat)](http://cocoapods.org/pods/DTSocialMediaLogin)[![License](https://img.shields.io/cocoapods/l/DTSocialMediaLogin.svg?style=flat)](http://cocoapods.org/pods/DTSocialMediaLogin)[![Platform](https://img.shields.io/cocoapods/p/DTSocialMediaLogin?style=flat)](http://cocoapods.org/pods/DTSocialMediaLogin)
 
-  
-
 Handle iOS app login with Sign in with Apple, Twitter, Facebook and Google with ease. It will really saves you a lot of hours. The callback will give you these variables:
 
 * id (`String`)
-
 * name (`String`)
-
 * email (`String`)
-
 * profileImageURL (`String`)
-
 * origin (`Any`)
-
-  
 
 The origin is a reference to the struct `DTAppleUser`, `DTGoogleUser`, `DTFacebookUser` and `DTTwitterUser`. For Google it has the property `user` that reference to `GIDGoogleUser` which you could use for any other Google APIs. While for Twitter, it has an `OAuthToken` to be use on other Twitter APIs.
 
-  
-
 ## Requirements
-
 * Base SDK: iOS 12
-
 * Deployment Target: iOS 10.0 or greater
-
-  
 
 ## Installation with Cocoapods
 
