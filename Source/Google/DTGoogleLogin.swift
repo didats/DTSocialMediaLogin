@@ -12,6 +12,12 @@ import GoogleSignIn
 class DTGoogleLogin: NSObject {
     var loggedIn: ((_ status: Bool, _ error: String, _ user: DTGoogleUser?) -> Void)?
     var scopes: [String] = []
+
+    var viewController: UIViewController? {
+        didSet {
+            GIDSignIn.sharedInstance()?.viewController = viewController
+        }
+    }
     
     init(clientID: String) {
         super.init()

@@ -89,6 +89,7 @@ public class DTSocialMediaLogin: NSObject {
             }
         case .Google:
             google.scopes = scopes
+            google.viewController = viewController
             google.login()
             google.loggedIn = { status, message, user in
                 if let user = user {
