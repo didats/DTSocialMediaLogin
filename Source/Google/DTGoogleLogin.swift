@@ -15,7 +15,7 @@ class DTGoogleLogin: NSObject {
 
     var viewController: UIViewController? {
         didSet {
-            GIDSignIn.sharedInstance()?.viewController = viewController
+            GIDSignIn.sharedInstance()?.presentingViewController = viewController
         }
     }
     
