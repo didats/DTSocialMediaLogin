@@ -18,8 +18,8 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Source/**/*.swift"
   spec.static_framework = true
 
-  spec.dependency 'FBSDKCoreKit', '~> 7.0.0'
-  spec.dependency 'FBSDKLoginKit', '~> 7.0.0'
+  spec.dependency 'FBSDKCoreKit/Swift', '~> 7.0.0'
+  spec.dependency 'FBSDKLoginKit/Swift', '~> 7.0.0'
   spec.dependency 'GoogleSignIn', '~> 5.0.2'
   spec.dependency 'OAuthSwift', '~> 2.1.0'
 
