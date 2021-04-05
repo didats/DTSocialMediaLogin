@@ -36,6 +36,10 @@ public class DTSocialMediaLogin: NSObject {
     }
     
     public var scopes: [String] = []
+
+    public static func initializer() {
+        DTFacebook.initializer()
+    }
     
     public static func setup(settings: DTSocialMediaKeys) -> DTSocialMediaLogin {
         let socialMedia = DTSocialMediaLogin()
