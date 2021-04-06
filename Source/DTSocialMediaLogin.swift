@@ -52,6 +52,15 @@ public class DTSocialMediaLogin: NSObject {
         socialMedia.google = DTGoogleLogin(clientID: settings.googleClientID)
         return socialMedia
     }
+
+    public static func sceneURL(_ url: URL?) {
+        guard let url = url else { return }
+        if url.absoluteString.contains("dttwitter-") {
+            _ = DTTwitter.openURL(url)
+        } else if url.absoluteString.contains("google") {
+            _ = DTGoogleLogin.openURL(url, options: [:])
+        }
+    }
     
     public static func openURL(app: UIApplication, url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
         
