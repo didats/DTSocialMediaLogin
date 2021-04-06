@@ -56,6 +56,18 @@ Go to [Twitter Developer Portal](https://developer.twitter.com/) and get `Twitte
 On XCode, go to `Signing & Capabilities` tab. Enable `Sign In with Apple` there.
 
 ### Code implementation
+On your `AppDelegate` file, and method `didFinishLaunchingWithOptions`, add this line
+```swift
+DTSocialMediaLogin.initializer()
+```
+
+On your `SceneDelegate` file, add new method below:
+```swift
+func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+    DTSocialMediaLogin.sceneURL(URLContexts.first?.url)
+}
+```
+
 On your Login View Controller, or whereever you wanna put the Login button, add import at the top and declare a property
 ```swift
 import DTSocialMediaLogin

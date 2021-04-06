@@ -14,6 +14,10 @@ class DTFacebook: NSObject {
     static let shared = DTFacebook()
     //private var scopes: [String] = ["email", "public_profile"]
     public var scopes: [String] = []
+
+    public static func initializer() {
+        ApplicationDelegate.initializeSDK(nil)
+    }
     
     func setup(app: UIApplication, options: [UIApplication.LaunchOptionsKey: Any]?) {
         FBSDKCoreKit.ApplicationDelegate.shared.application(app, didFinishLaunchingWithOptions: options)
