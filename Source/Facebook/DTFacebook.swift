@@ -46,17 +46,16 @@ class DTFacebook: NSObject {
                         done(false, "facebook_cancel_declined", nil)
                     }
                     else {
-                        //let userID = result.token?.userID
-                        self.graph(str: "/me?fields=email,name", done: done)
+                        self.graph(done: done)
                     }
                 }
             }
         }
     }
     
-    private func graph(str: String, done: @escaping(_ status: Bool, _ message: String, _ user: DTFacebookUser?) -> Void) {
+    private func graph(done: @escaping(_ status: Bool, _ message: String, _ user: DTFacebookUser?) -> Void) {
         let connection = FBSDKCoreKit.GraphRequestConnection()
-        let request = FBSDKCoreKit.GraphRequest(graphPath: str)
+        let request = FBSDKCoreKit.GraphRequest(graphPath: "me", parameters: ["fields": "email, name"])
         connection.add(request) { (conn, result, error) in
             if error != nil {
                 done(false, error!.localizedDescription, nil)
