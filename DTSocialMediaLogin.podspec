@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "DTSocialMediaLogin"
-  spec.version      = "0.1.3"
+  spec.version      = "0.1.4"
   spec.summary      = "Handle Login with Apple, Facebook, Google, and Twitter"
   spec.description  = "Handle iOS app login with Apple, Twitter, Facebook and Google with ease."
   spec.homepage     = "https://github.com/didats/DTSocialMediaLogin"
