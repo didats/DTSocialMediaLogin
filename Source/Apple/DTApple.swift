@@ -14,6 +14,7 @@ public struct DTAppleUser {
     public var id: String
     public var fullname: String
     public var email: String
+    public var origin: Any
     
     init(credential: ASAuthorizationAppleIDCredential) {
         let given = credential.fullName?.givenName ?? ""
@@ -21,7 +22,7 @@ public struct DTAppleUser {
         self.id = credential.user
         self.fullname = "\(given) \(family)"
         self.email = credential.email ?? ""
-        
+        self.origin = credential
     }
 }
 
