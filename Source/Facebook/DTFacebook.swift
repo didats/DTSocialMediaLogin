@@ -16,7 +16,7 @@ class DTFacebook: NSObject {
     public var scopes: [String] = []
 
     public static func initializer() {
-        ApplicationDelegate.initializeSDK(nil)
+        //ApplicationDelegate.initializeSDK(nil)
     }
     
     func setup(app: UIApplication, options: [UIApplication.LaunchOptionsKey: Any]?) {
@@ -47,7 +47,7 @@ class DTFacebook: NSObject {
                     }
                     else {
                         //let userID = result.token?.userID
-                        self.graph(str: "/me?fields=email,name", done: done)
+                        self.graph(str: "me", done: done)
                     }
                 }
             }
@@ -56,7 +56,11 @@ class DTFacebook: NSObject {
     
     private func graph(str: String, done: @escaping(_ status: Bool, _ message: String, _ user: DTFacebookUser?) -> Void) {
         let connection = FBSDKCoreKit.GraphRequestConnection()
-        let request = FBSDKCoreKit.GraphRequest(graphPath: str)
+        let request = FBSDKCoreKit.GraphRequest(graphPath: str,
+                                                parameters: ["fields":"email,name"],
+                                                tokenString: AccessToken.current?.tokenString,
+                                                version: nil,
+                                                httpMethod: .get)
         connection.add(request) { (conn, result, error) in
             if error != nil {
                 done(false, error!.localizedDescription, nil)
