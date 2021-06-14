@@ -49,7 +49,13 @@ final class DTTwitter {
         }
     }
     
-    func login(done: @escaping (_ error: DTError?, _ user: DTTwitterUser?) -> Void) {
+    func login(from viewController: UIViewController, done: @escaping (_ error: DTError?, _ user: DTTwitterUser?) -> Void) {
+        
+        // taking care of apple rejection on opening url
+        if let oauth = self.oauth {
+            oauth.authorizeURLHandler = SafariURLHandler(viewController: viewController, oauthSwift: oauth)
+        }
+        
         if key.count > 0 && secret.count > 0 {
             callback = "dttwitter-\(key)://"
             

@@ -81,7 +81,7 @@ public class DTSocialMediaLogin: NSObject {
         
         switch type {
         case .Twitter:
-            twitter.login { (error, user) in
+            twitter.login(from: viewController) { (error, user) in
                 if let user = user {
                     callback(nil, DTSocialMediaUser(from: user))
                 }
