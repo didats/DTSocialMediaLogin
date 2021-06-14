@@ -21,7 +21,7 @@ The origin is a reference to the struct `DTAppleUser`, `DTGoogleUser`, `DTFacebo
 
 Add pod to your Podfile.
 ```
-pod 'DTSocialMediaLogin', :git => 'https://github.com/didats/DTSocialMediaLogin', :branch => 'v.0.1.4'
+pod 'DTSocialMediaLogin', :git => 'https://github.com/didats/DTSocialMediaLogin'
 ```
 
 Open your `AppDelegate.swift` file, and add these codes
