@@ -20,9 +20,9 @@ public struct DTGoogleUser {
     init(user: GIDGoogleUser) {
         self.userID = user.userID ?? "0"
         self.token = user.authentication.idToken ?? ""
-        self.fullname = user.profile.name ?? ""
-        self.email = user.profile.email ?? ""
-        self.imageURL = user.profile.imageURL(withDimension: 100)
+        self.fullname = user.profile?.name ?? ""
+        self.email = user.profile?.email ?? ""
+        self.imageURL = user.profile?.imageURL(withDimension: 100)
         self.user = user
     }
 }

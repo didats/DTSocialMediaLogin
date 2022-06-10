@@ -12,33 +12,27 @@ import GoogleSignIn
 class DTGoogleLogin: NSObject {
     var loggedIn: ((_ status: Bool, _ error: String, _ user: DTGoogleUser?) -> Void)?
     var scopes: [String] = []
-
-    var viewController: UIViewController? {
-        didSet {
-            GIDSignIn.sharedInstance()?.presentingViewController = viewController
-        }
-    }
+    private var clientID: String
     
     init(clientID: String) {
-        super.init()
-        GIDSignIn.sharedInstance()?.clientID = clientID
-        GIDSignIn.sharedInstance()?.delegate = self
+        self.clientID = clientID
     }
     
-    func login() {
+    func login(from viewController: UIViewController) {
+        let setClientID = GIDConfiguration.init(clientID: self.clientID)
         if scopes.count > 0 {
-            GIDSignIn.sharedInstance()?.scopes = scopes
+            GIDSignIn.sharedInstance.addScopes(scopes, presenting: viewController)
+            return
         }
-        GIDSignIn.sharedInstance().signIn()
+        GIDSignIn.sharedInstance.signIn(with: setClientID, presenting: viewController)
     }
     
     static func openURL(_ url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
-        
-        return GIDSignIn.sharedInstance()?.handle(url) ?? false
+        return GIDSignIn.sharedInstance.handle(url)
     }
 }
 
-extension DTGoogleLogin: GIDSignInDelegate {
+extension DTGoogleLogin {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             self.loggedIn?(false, error.localizedDescription, nil)
